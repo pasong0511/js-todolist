@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "노마드코더 수업을 통한 바닐라js 클론코딩",
+  "main": "index.js",
+  "scripts": {
+    "prebuild":"rm -rf ./dist",
+    "build":"mkdir dist && cp -r ./css ./dist/css && cp -r ./img ./dist/img && cp -r ./js ./dist/js && cp ./index.html ./dist/index.html",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasong0511/todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pasong0511/todolist/issues"
+  },
+  "homepage": "https://github.com/pasong0511/todolist#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
