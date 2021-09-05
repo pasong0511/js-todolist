@@ -1,0 +1,138 @@
+.hidden {
+    display: none;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+body::before{
+    content: " ";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.top{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+h1, h2, span{
+    color: white;  
+}
+span {
+    font-size : 20px;
+}
+h2 {
+    font-size : 150px;
+}
+h1 {
+    font-size : 30px;
+}
+#quote{
+    font-size : 20px;
+}
+
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+input {
+    background: none;
+    appearance: none;
+    outline:none;
+    border: 0;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid white;
+    
+}
+input::placeholder {
+    color: white;
+}
+
+.js-name input{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+#greeting{
+    padding: 25px;
+    text-align: center;
+}
+
+#quote{
+    padding: 0px 20px;
+}
+
+#todo-form input{
+    width: calc(100% - 40px);
+    margin: 100px 0px 0px 20px;
+}
+
+#todo-list li{
+    padding: 5px 20px;
+    background: rgba(255,255,255,0.2);
+    height: 45px;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#todo-list span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 1000px;
+}
+#todo-list li:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+
+#todo-list li:hover span{
+    color:black;
+}
+
+#todo-list a{
+    margin-left: 10px;
+    text-decoration:none;
+}
+
+#clock {
+    text-align: center;
+}
+
+#login-form{
+    text-align: center;
+}
